@@ -77,7 +77,8 @@
   color: rgba(0, 0, 0, 0.5);
   overflow: hidden;
 
-  box-shadow: 12px 12px 20px rgb(249, 251, 255), -15px -13px 20px rgb(175, 170, 170),
-              9px 9px 20px rgb(140, 141, 145), -17px -17px 20px rgb(255, 255, 255);
-
+  box-shadow: 12px 12px 20px rgb(249, 251, 255),
+    -15px -13px 20px rgb(175, 170, 170), 9px 9px 20px rgb(140, 141, 145),
+    -17px -17px 20px rgb(255, 255, 255);
 }
+/* Yeeeeeet */
