@@ -38,7 +38,7 @@
   height: 5rem;
   
   border-radius: 1rem;
-  top: 70%;
+  top: 28%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -55,6 +55,11 @@
                -0.1rem -0.1rem 0.1rem rgb(255, 255, 255); */
 
   transition: all 1s cubic-bezier(0.33, 1, 0.68, 1);
+}
+@media screen and (min-width: 350px){
+  .drop_shadow {
+    top: 25%;
+  }
 }
 .drop_shadow:hover {
   background: -webkit-linear-gradient(
@@ -80,8 +85,15 @@
 /*Soft Edge :) */
 .static_shapes {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap:wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+  padding-bottom: 2rem;
+  gap: 1.5rem;
 }
+
 .circle {
   height: 15rem;
   width: 15rem;
@@ -150,4 +162,35 @@
     transform: rotate(360deg);
   }
 }
-
+.soft_circle {
+  background-color: #dcdfe4;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* AEAEC0 20%, FFFFFF 100% */
+  box-shadow: 0.2rem 0.2rem 0.3rem rgb(174, 174, 192, 0.2),
+              -0.2rem -0.2rem 0.3rem rgba(255, 255, 255),
+              inset 0.2rem 0.2rem 0.3rem rgba(255, 255, 255),
+              inset -0.2rem -0.2rem 0.3rem rgb(174, 174, 192, 0.2);
+  
+}
+.soft_inner {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  /* AEAEC0 20%, FFFFFF 100% */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0.2rem 0.2rem 0.3rem #FFFFFF,
+              -0.2rem -0.2rem 0.3rem rgb(174, 174, 192, 0.2),
+              inset 0.2rem 0.2rem 0.3rem rgb(174, 174, 192, 0.2),
+              inset -0.2rem -0.2rem 0.3rem #FFFFFF;
+}
+.soft_inner::after {
+  content: "SOFT CIRCLE"; 
+  color: rgb(0, 0, 0, 0.5);
+}
